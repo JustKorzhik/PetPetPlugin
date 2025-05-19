@@ -4,7 +4,7 @@ module.exports = class PetPetProfile {
         this.observer = null;
         this.styleElement = null;
         this.imageUrl = "https://cdn.discordapp.com/attachments/1365393518482161685/1373659823333179403/262ae0a5d2b554f5.gif?ex=682b37e7&is=6829e667&hm=d7e461f51cf1829948bdcabbee40e10560fbfdb45712a960327076bdf2f7909b&";
-        this.stateButton = 0; // Переносим состояние в конструктор
+        this.stateButton = 0;
     }
 
     start() {
@@ -133,7 +133,7 @@ module.exports = class PetPetProfile {
             this.button.style.transform = "translateX(-50%)";
             this.button.style.boxShadow = "0 2px 10px rgba(0, 0, 0, 0.2)";
         });
-        // тут кнопка братан, не теряй!!! :) ######################################################################
+        // Я всё время теряю эту часть кода с кнопкой. Как так?
         this.button.addEventListener("click", async () => {
             if (this.stateButton === 0) {
                 this.stateButton = 1;
